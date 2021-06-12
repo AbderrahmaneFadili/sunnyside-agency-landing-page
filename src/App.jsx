@@ -1,4 +1,5 @@
 import React from "react";
+import Gallery from "./components/Gallery/Gallery";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Sections from "./components/Sections/Sections";
@@ -14,6 +15,7 @@ function App() {
       <Sections />
       <Services />
       <Testimonials />
+      <Gallery />
     </>
   );
 }
