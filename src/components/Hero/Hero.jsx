@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <HeroWrapper>
       <HeroHeading>We are creatives</HeroHeading>
-      <a href="#transform-section">
+      <a href="#sections">
         <ArrowDown src={require("../../images/icon-arrow-down.svg").default} />
       </a>
     </HeroWrapper>
