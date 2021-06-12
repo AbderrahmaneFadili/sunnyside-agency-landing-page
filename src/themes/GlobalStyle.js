@@ -31,11 +31,10 @@ const GlobalStyle = createGlobalStyle`
     html{
         font-family: var(--main-font);
         font-size: var(--font-size);
+        scroll-behavior: smooth;
     }
 
-    body{
-        background-color: var(--soft-red);
-    }
+    
 `;
 
 export default GlobalStyle;
