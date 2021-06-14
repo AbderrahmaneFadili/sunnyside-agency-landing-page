@@ -24,9 +24,13 @@ export const FooterLogo = styled.img`
 export const FooterMenu = styled.ul`
   list-style: none;
   display: flex;
-  width: 60%;
+  width: 70%;
   justify-content: space-between;
   margin-bottom: 2rem;
+
+  @media screen and (min-width: 750px) {
+    width: 40%;
+  }
 `;
 
 export const FooterMenuItem = styled.li``;

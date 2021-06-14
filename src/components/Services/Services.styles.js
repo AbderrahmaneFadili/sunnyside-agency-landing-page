@@ -21,7 +21,7 @@ export const Service = styled.div`
 
   @media screen and (min-width: 950px) {
     background: url(${(props) => props.desktopImage}) no-repeat center/cover;
-    padding: 3rem 5rem;
+    width: 50%;
   }
 `;
 
@@ -29,9 +29,14 @@ export const ServiceTitle = styled.h1`
   color: ${({ color }) => `var(${color})`};
   font-size: 2rem;
   line-height: 1.5;
+  margin-bottom: 1rem;
 `;
 
 export const ServiceDescription = styled.p`
   color: ${({ color }) => `var(${color})`};
   line-height: 1.5;
+
+  @media screen and (min-width: 950px) {
+    width: 70%;
+  }
 `;
