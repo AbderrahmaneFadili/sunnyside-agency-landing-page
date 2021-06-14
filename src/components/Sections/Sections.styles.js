@@ -18,6 +18,10 @@ export const SectionImage = styled.div`
   background: url(${(props) => props.mobileImage}) no-repeat center/cover;
   height: 400px;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const SectionContent = styled.div`
@@ -28,6 +32,10 @@ export const SectionContent = styled.div`
   padding: 5rem 2rem;
   text-align: center;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const SectionContentTitle = styled.h2`

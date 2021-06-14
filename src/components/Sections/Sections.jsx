@@ -31,6 +31,7 @@ const Sections = () => {
       </TransformSection>
 
       <StandOutSection>
+        <SectionImage mobileImage={standOutImage}></SectionImage>
         <SectionContent>
           <SectionContentTitle>
             Stand out to the right audience
@@ -44,7 +45,6 @@ const Sections = () => {
             Learn more
           </SectionContentLink>
         </SectionContent>
-        <SectionImage mobileImage={standOutImage}></SectionImage>
       </StandOutSection>
     </main>
   );
