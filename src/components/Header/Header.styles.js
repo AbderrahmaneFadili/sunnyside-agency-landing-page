@@ -100,8 +100,16 @@ export const NavButton = styled.a`
   text-decoration: none;
   color: var(--very-dark-desaturated-blue);
   border-radius: 300px;
+  text-transform: uppercase;
+  transition: 0.4s ease-in;
+  position: relative;
 
   @media screen and (min-width: 950px) {
     background: var(--white);
+
+    &:hover {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.4);
+    }
   }
 `;

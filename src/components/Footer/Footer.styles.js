@@ -38,6 +38,11 @@ export const FooterMenuItem = styled.li``;
 export const FooterMenuLink = styled.a`
   text-decoration: none;
   color: var(--footer);
+  transition: 0.4s;
+
+  &:hover {
+    color: var(--white);
+  }
 `;
 
 export const Socials = styled.ul`
@@ -53,4 +58,9 @@ export const SocialLink = styled.a`
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--footer);
+  transition: 0.4s;
+
+  &:hover {
+    color: var(--white);
+  }
 `;

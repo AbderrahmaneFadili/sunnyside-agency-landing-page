@@ -35,6 +35,9 @@ export const SectionContent = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 50%;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem 4rem;
   }
 `;
 
@@ -68,5 +71,10 @@ export const SectionContentLink = styled.a`
     left: 50%;
     transform: translateX(-50%);
     bottom: -5px;
+    transition: 0.4s linear;
+  }
+
+  &:hover::after {
+    opacity: 1;
   }
 `;
