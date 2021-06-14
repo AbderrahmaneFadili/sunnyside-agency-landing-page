@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import hero from "../../images/mobile/image-header.jpg";
-
+import desktopHero from "../../images/desktop/image-header.jpg";
 export const HeroWrapper = styled.div`
   height: 100vh;
   background-image: url(${hero});
@@ -11,6 +11,10 @@ export const HeroWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (min-width: 950px) {
+    background-image: url(${desktopHero});
+  }
 `;
 
 export const HeroHeading = styled.h1`
