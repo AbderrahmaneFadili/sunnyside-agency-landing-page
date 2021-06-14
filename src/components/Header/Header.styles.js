@@ -16,6 +16,10 @@ export const HeaderLogo = styled.img``;
 
 export const ToggleMenu = styled.img`
   cursor: pointer;
+
+  @media screen and (min-width: 950px) {
+    display: none;
+  }
 `;
 
 /* Nav Menu */
@@ -43,10 +47,26 @@ export const Nav = styled.nav`
     border-left: 20px solid transparent;
     border-top: 20px solid transparent;
   }
+
+  @media screen and (min-width: 950px) {
+    position: initial;
+    background-color: initial;
+    width: initial;
+    left: initial;
+    transform: initial;
+    top: initial;
+    text-align: initial;
+    padding: initial;
+    display: initial;
+  }
 `;
 
 export const NavList = styled.ul`
   list-style: none;
+  @media screen and (min-width: 950px) {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const NavItem = styled.li`
@@ -55,12 +75,21 @@ export const NavItem = styled.li`
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: 950px) {
+    margin-bottom: 0;
+    margin: 0 20px;
+  }
 `;
 
 export const NavLink = styled.a`
   color: var(--dark-grayish-blue);
   font-size: 1.1rem;
   text-decoration: none;
+
+  @media screen and (min-width: 950px) {
+    color: var(--white);
+  }
 `;
 
 export const NavButton = styled.a`
@@ -71,4 +100,8 @@ export const NavButton = styled.a`
   text-decoration: none;
   color: var(--very-dark-desaturated-blue);
   border-radius: 300px;
+
+  @media screen and (min-width: 950px) {
+    background: var(--white);
+  }
 `;
