@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-export const ServicesWrapper = styled.section``;
+export const ServicesWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 950px) {
+    flex-direction: row;
+  }
+`;
 
 export const Service = styled.div`
   padding: 3rem 1.5rem;
@@ -11,6 +18,11 @@ export const Service = styled.div`
   align-items: center;
   text-align: center;
   background: url(${(props) => props.mobileImage}) no-repeat center/cover;
+
+  @media screen and (min-width: 950px) {
+    background: url(${(props) => props.desktopImage}) no-repeat center/cover;
+    padding: 3rem 5rem;
+  }
 `;
 
 export const ServiceTitle = styled.h1`

@@ -9,10 +9,13 @@ import {
 import mobileGrD from "../../images/mobile/image-graphic-design.jpg";
 import mobilePh from "../../images/mobile/image-photography.jpg";
 
+import desktopGrD from "../../images/desktop/image-graphic-design.jpg";
+import desktopPh from "../../images/desktop/image-photography.jpg";
+
 const Services = () => {
   return (
     <ServicesWrapper>
-      <Service mobileImage={mobileGrD}>
+      <Service desktopImage={desktopGrD} mobileImage={mobileGrD}>
         <ServiceTitle color={"--graphic-design-text"}>
           Graphic design
         </ServiceTitle>
@@ -22,7 +25,7 @@ const Services = () => {
         </ServiceDescription>
       </Service>
 
-      <Service mobileImage={mobilePh}>
+      <Service desktopImage={desktopPh} mobileImage={mobilePh}>
         <ServiceTitle color={"--photography-text"}>Photography</ServiceTitle>
         <ServiceDescription color={"--photography-text"}>
           Increase your credibility by getting the most stunning, high-quality
