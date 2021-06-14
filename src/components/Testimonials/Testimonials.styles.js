@@ -8,6 +8,12 @@ export const TestimonialsContainer = styled.div`
   max-width: 90%;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 950px) {
+    flex-direction: row;
+  }
 `;
 
 export const TestimonialsTitle = styled.h2`
@@ -44,6 +50,7 @@ export const TestimonialName = styled.h3`
   color: var(--very-dark-desaturated-blue);
   font-family: var(--headings-buttons-font);
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
 `;
 
 export const TestimonialJob = styled.p`
